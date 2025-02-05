@@ -9,6 +9,11 @@ Access mode on iOS.
 
 On Android, it calls `isInLockTaskMode`.
 
+```xml
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
+    <uses-permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+```
+
 On iOS, it returns result of `UIAccessibility.isGuidedAccessEnabled`.
 
 ```dart
